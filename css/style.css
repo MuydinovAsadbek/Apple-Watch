@@ -102,11 +102,6 @@ img {
   background-size: 587px 565px;
   background-position:center right;
 }
-
-.hero-content-img {
-
-}
-
 .hero-content-heading {
   display: inline-block;
   padding: 0;
@@ -129,4 +124,11 @@ img {
   line-height: 150%;
   color: #777;
   border-left: 3px solid #888;
+}
+
+
+/*HERO-BOTTOM-LINE*/
+.hero-bottom-line {
+  height: 2px;
+  background-color: #ddd;
 }
