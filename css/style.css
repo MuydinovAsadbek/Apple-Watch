@@ -1,8 +1,10 @@
- /* GLOBAL */
+/* CUSTOM PROPS */
 :root {
-
+  --primary: #ea625c;
+  --text-color:#333;
 }
 
+/* GLOBAL */
  * {
   box-sizing: border-box;
 }
@@ -29,7 +31,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #4a4b4c;
   background-color: #fff;
 }
 
@@ -51,7 +52,7 @@ img {
 /* BUTTON */
 .button {
   padding: 12px 38px;
-  background-color: #ea625c;
+  background-color: var(--primary);
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -131,12 +132,12 @@ img {
 .site-header-link {
   margin-right: 30px;
   font-style: normal;
-  color: #333;
+  color: var(--text-color);
   text-decoration: none;
 }
 .site-header-link-last {
   font-style: normal;
-  color: #333;
+  color: var(--text-color);
   text-decoration: none;
 }
 .site-header-input {
@@ -146,12 +147,13 @@ img {
   font-size: 15px;
   line-height: 150%;
   border: none;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid var(--text-color);
 }
 
 /* SITE HERO */
 .site-hero {
   padding-top: 152px;
+  padding-bottom: 185px;
   border-bottom: 2px solid #ddd;
   background-image: url("../img/hero-bg.png");
   background-repeat: no-repeat;
@@ -160,7 +162,7 @@ img {
 .main-content {
   width: 100%;
   max-width: 490px;
-  padding-bottom: 185px;
+
   margin: 0;
 }
 .main-content-heading {
@@ -223,7 +225,7 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  color: #333;
+  color: var(--text-color);
 }
 .feature-hr {
   margin: 0;
@@ -245,11 +247,58 @@ img {
 
 /* APLE-WATCH-ABOUT */
 .about-apple-watch {
-  padding-top: 248px;
-  background-image: url("../img/watch-in-hand.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
+.about-apple-watch-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-apple-watch-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
+
+/* SECTION-RUNNERS */
+.section-runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url("../img/runners.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+.runners-content {
+  width: 100%;
+  max-width: 490px;
+  margin-left: auto;
+}
+.runners-content-heading {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #fff;
+}
+.runners-content-text {
+  padding: 0;
+  margin: 0;
+  padding-left: 40px;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  border-left: 3px solid #fff;
+}
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -260,5 +309,9 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
  .site-hero {
   background-image: url("../img/hero-bg.png");
+ }
+
+ .section-runners {
+   background-image: url("../img/runners@2x.png");
  }
 }
