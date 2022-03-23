@@ -139,9 +139,11 @@ img {
   font-style: normal;
   color: var(--text-color);
   text-decoration: none;
+  transition: 0.5 ease;
 }
 .site-header-link:hover {
   color:  #45B8AC;
+  transition: 0.5 ease;
 }
 .site-header-link:active {
   opacity: 0.6;
