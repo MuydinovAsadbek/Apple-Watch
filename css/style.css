@@ -140,10 +140,22 @@ img {
   color: var(--text-color);
   text-decoration: none;
 }
+.site-header-link:hover {
+  color:  #45B8AC;
+}
+.site-header-link:active {
+  opacity: 0.6;
+}
 .site-header-link-last {
   font-style: normal;
   color: var(--text-color);
   text-decoration: none;
+}
+.site-header-link-last:hover {
+  color:  #45B8AC;
+}
+.site-header-link-last:active {
+  opacity: 0.6;
 }
 .site-header-input {
   padding: 0;
