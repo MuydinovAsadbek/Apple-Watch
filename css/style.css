@@ -243,6 +243,14 @@ img {
 }
 
 
+/* APLE-WATCH-ABOUT */
+.about-apple-watch {
+  padding-top: 248px;
+  background-image: url("../img/watch-in-hand.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
