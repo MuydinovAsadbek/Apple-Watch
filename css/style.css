@@ -121,7 +121,12 @@ img {
  padding: 0;
  margin: 0;
  margin-right: auto;
-
+}
+.site-header-logo:hover {
+  opacity: 0.8;
+}
+.site-header-logo:active {
+  opacity: 0.6;
 }
 .site-header-list {
   display: flex;
