@@ -142,7 +142,7 @@ img {
   transition: 0.5 ease;
 }
 .site-header-link:hover {
-  color:  #45B8AC;
+  color:#45B8ac;
   transition: 0.5 ease;
 }
 .site-header-link:active {
@@ -211,9 +211,7 @@ img {
 .site-feature {
   display: flex;
   flex-grow: 1;
-  align-items: center;
   padding-top: 70px;
-  align-items: center;
 }
 .feature-list {
   padding: 0;
@@ -225,7 +223,7 @@ img {
 }
 .feature-item {
   width: 280px;
-  height: 240px;
+
 }
 .feature-heading {
   display: inline-block;
