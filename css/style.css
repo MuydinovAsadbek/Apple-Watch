@@ -103,7 +103,6 @@ img {
 }
 
 
-
 /* SITE-HEADER */
 .site-header {
   width: 100%;
@@ -176,9 +175,10 @@ img {
 }
 .site-header-input::placeholder {
   font-size: 15px;
-
   color: #666;
 }
+
+
 /* SITE HERO */
 .site-hero {
   padding-top: 152px;
@@ -216,6 +216,7 @@ img {
   color: #777;
   border-left: 3px solid #888;
 }
+
 
 /* SITE-FEATURE */
 .site-feature {
