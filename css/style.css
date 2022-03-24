@@ -2,6 +2,7 @@
 :root {
   --primary: #ea625c;
   --text-color:#333;
+  --main-font:'Roboto', 'Arial', sans-serif;
 }
 
 /* GLOBAL */
@@ -27,7 +28,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -51,7 +52,9 @@ img {
 
 /* BUTTON */
 .button {
+  width: 260px;
   padding: 12px 38px;
+  align-items: center;
   background-color: var(--primary);
   font-style: normal;
   font-weight: 700;
@@ -133,17 +136,20 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-right: 40px;
 }
 .site-header-link {
-  margin-right: 30px;
+  display: inline-block;
   font-style: normal;
   color: var(--text-color);
   text-decoration: none;
-  transition: 0.5 ease;
+  border-bottom: 2px solid transparent;
+}
+.site-header-item:not(:last-child) {
+  margin-right: 30px;
 }
 .site-header-link:hover {
-  color:#45B8ac;
-  transition: 0.5 ease;
+  border-bottom: 2px solid #000;
 }
 .site-header-link:active {
   opacity: 0.6;
@@ -160,15 +166,19 @@ img {
   opacity: 0.6;
 }
 .site-header-input {
-  padding: 0;
-  margin-left: 40px;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 150%;
+  width: 170px;
+  line-height:23px;
   border: none;
-  border-bottom: 2px solid var(--text-color);
+  border-bottom: 1px solid #333333;
+  padding-bottom: 6px;
+  font-family:var(--main-font);
+  box-sizing: border-box;
 }
+.site-header-input::placeholder {
+  font-size: 15px;
 
+  color: #666;
+}
 /* SITE HERO */
 .site-hero {
   padding-top: 152px;
